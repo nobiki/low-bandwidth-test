@@ -1,0 +1,8 @@
+version: "3.0"
+services:
+  low-bandwidth-client:
+    container_name: low-bandwidth-client
+    build: ./low-bandwidth-client
+    tty: true
+    cap_add:
+    - NET_ADMIN
